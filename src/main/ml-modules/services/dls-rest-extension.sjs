@@ -9,7 +9,7 @@ function put(context, params, input) {
     var inputObject = input.toObject();
     var methodName = inputObject["dls-function"];
     var validationResult = validator.validateParams(methodName, inputObject);
-    if(validationResult.result === true){
+    if(validationResult.inputValidationResult === true){
         return dlsFunctions.invoke("POST", methodName, inputObject);
     }
     return validationResult;
@@ -19,7 +19,7 @@ function get(context, params) {
 
     var methodName = params["dls-function"];
     var validationResult = validator.validateParams(methodName, params);
-    if(validationResult.result === true){
+    if(validationResult.inputValidationResult === true){
         return dlsFunctions.invoke("GET", methodName, params);
     }
     return validationResult;

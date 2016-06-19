@@ -19,13 +19,22 @@ var documentAddCollections = function(params){
     return params["$uri"];
 }
 
+var documentAddPermissions = function(params){
+    dls.documentAddPermissions(params["$uri"], params["$permissions"])
+}
+
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
     "dls:break-checkout" : dlsBreakCheckout,
-    "dls:document-add-collections" : documentAddCollections
+    "dls:document-add-collections" : documentAddCollections,
+    "document-add-permissions" : documentAddPermissions
 }
 
+
+exports.dlsBreakCheckout = dlsBreakCheckout;
+exports.documentAddCollections = documentAddCollections;
 exports.documentInsertAndManage = documentInsertAndManage;
+exports.documentAddPermissions = documentAddPermissions;
 exports.functionMapping = functionMapping;
 
 

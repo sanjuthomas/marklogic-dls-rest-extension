@@ -7,7 +7,7 @@ var configuration = require("/lib/dls-function-conf.sjs");
 validateParams = function(methodName, params){
 
     var validationResult = {
-        "result" : true,
+        "inputValidationResult" : true,
         "missingParams" : []
     }
 
@@ -15,6 +15,7 @@ validateParams = function(methodName, params){
         populateErrorMessage(validationResult, "dls-function");
     }
 
+    //validate if all the mandatory params exist in the request
     var mandatoryArguments = configuration.methods[methodName].mandatory;
     mandatoryArguments.forEach(function(e){
         var argument = params[e]
@@ -23,22 +24,37 @@ validateParams = function(methodName, params){
         }
     });
 
+    //validate if the params are in correct structure
+    if(true === validationResult.inputValidationResult){
+        validateObjectParam(methodName, params, validationResult)
+    }
     return validationResult;
 }
 
+
 populateErrorMessage = function(validationResult, argument){
-    validationResult.result = "Input validation failed."
+    validationResult.inputValidationResult = "Input validation failed."
     validationResult.missingParams.push(argument);
-    validationResult.errorMessage = "Mandatory arguments are missing."
+    validationResult.reason = "Mandatory arguments are missing."
 }
 
-validateObjectParam = function(params){
-    params.forEach(function (e) {
-        var param = parameters[e];
-        if(undefined !== param){
-
-        }
-    });
+validateObjectParam = function(methodName, params, validationResult){
+    var paramsToValidate = configuration.methods[methodName].paramsToValidate
+    if(undefined !== paramsToValidate){
+        paramsToValidate.forEach(function(p){
+            var paramToValidate = params[p];
+            var parameterObject = configuration.parameters[p];
+            var mandatoryElements = parameterObject.mandatory;
+            mandatoryElements.forEach(function(a){
+                if(undefined === paramToValidate[a]){
+                    validationResult.inputValidationResult = "Input validation failed.";
+                    validationResult.reason = "One or more input parameter is not in correct structure.";
+                    validationResult.paramterName = p;
+                    validationResult.missingElements = mandatoryElements;
+                }
+            })
+        })
+    }
 }
 
 exports.validateParams = validateParams;

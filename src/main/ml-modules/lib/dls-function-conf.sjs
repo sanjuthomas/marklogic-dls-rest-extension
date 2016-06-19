@@ -43,7 +43,7 @@ var methods = {
     "dls:document-add-permissions" : {
         "mandatory" : ["$uri", "$permissions"],
         "optional": [],
-        "parameterValidation" : true
+        "paramsToValidate" : ["$permissions"]
     },
     "dls:document-add-properties" : {
         "mandatory" : ["$uri", "$properties"],
@@ -107,7 +107,7 @@ var methods = {
     "dls:document-remove-permissions" : {
         "mandatory" : ["$uri", "$permissions"],
         "optional" : [],
-        "parameterValidation" : true
+        "paramsToValidate" : ["$permissions"]
     },
     "dls:document-remove-properties" : {
         "mandatory" : ["$uri", "$property-names"],
@@ -124,7 +124,7 @@ var methods = {
     "dls:document-set-permissions" : {
         "mandatory" : ["$uri", "$permissions"],
         "optional" : [],
-        "parameterValidation" : true
+        "paramsToValidate" : ["$permissions"]
     },
     "dls:document-set-properties" : {
         "mandatory" : ["$uri", "$properties"],
