@@ -1,0 +1,24 @@
+{
+  "role-name": "dls-extension-role",
+  "description": "dls-extension-role",
+  "role": [
+    "rest-extension-user", "dls-admin"
+  ],
+  "privilege": [
+    {
+      "privilege-name": "rest-reader",
+      "kind": "execute",
+      "action": "http://marklogic.com/xdmp/privileges/rest-reader"
+    },
+    {
+      "privilege-name": "rest-writer",
+      "kind": "execute",
+      "action": "http://marklogic.com/xdmp/privileges/rest-writer"
+    },
+    {
+      "privilege-name": "unprotected-collections",
+      "kind": "execute",
+      "action": "http://marklogic.com/xdmp/privileges/unprotected-collections"
+    }
+  ]
+}

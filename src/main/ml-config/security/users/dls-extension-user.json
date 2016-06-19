@@ -1,0 +1,6 @@
+{
+  "user-name": "dls-extension-user",
+  "description": "dls extension user",
+  "password": "dls-extension-user",
+  "role": ["dls-extension-role"]
+}

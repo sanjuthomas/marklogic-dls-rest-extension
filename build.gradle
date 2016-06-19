@@ -1,0 +1,25 @@
+buildscript {
+    if (project.hasProperty("env")) {
+        def buildFile = "env-" + project.property("env") + ".gradle"
+        println "Applying environment-based build file: " + buildFile
+        apply from: buildFile
+    }
+}
+
+
+plugins {
+  id "com.marklogic.ml-gradle" version "2.2.0-RC1"
+}
+
+repositories {
+    jcenter()
+
+    // Needed for mlcp dependencies
+    maven {url "http://developer.marklogic.com/maven2/"}
+
+    // Needed for hadoop dependencies for mlcp
+    maven {url "http://repository.cloudera.com/artifactory/cloudera-repos/" }
+
+}
+
+

@@ -1,0 +1,13 @@
+{
+  "role-name": "dls-extension-role",
+  "permission": [
+    {
+      "role-name": "dls-extension-role",
+      "capability": "update"
+    },
+    {
+      "role-name": "dls-extension-role",
+      "capability": "read"
+    }
+  ]
+}

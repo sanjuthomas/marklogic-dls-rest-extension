@@ -1,0 +1,4 @@
+<group-properties xmlns="http://marklogic.com/manage">
+  <group-name>Default</group-name>
+  <list-cache-size>2048</list-cache-size>
+</group-properties>

@@ -1,0 +1,11 @@
+{
+  "dls-function": "dls:document-insert-and-manage",
+  "$uri": "/entrepreneur.json",
+  "$deep": false,
+  "$doc": {
+    "id": 1,
+    "fName" : "Sanju",
+    "lName" : "Thomas",
+    "city" : "NYC"
+  }
+}

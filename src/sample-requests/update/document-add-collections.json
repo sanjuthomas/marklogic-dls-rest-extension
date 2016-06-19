@@ -1,0 +1,5 @@
+{
+  "dls-function": "dls:document-add-collections",
+  "$uri": "/entrepreneur.json",
+  "$collections" : ["MarkLogic", "Consultant"]
+}
