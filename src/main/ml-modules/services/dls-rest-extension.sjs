@@ -25,11 +25,6 @@ function get(context, params) {
     return validationResult;
 };
 
-function post(context, params, input) {
-    return "Not Implemented!";
-};
-
 exports.GET = get;
 exports.PUT = put;
-exports.POST = post;
 
