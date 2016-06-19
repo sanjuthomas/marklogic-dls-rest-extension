@@ -2,7 +2,7 @@
   "dls-function": "dls:document-add-collections",
   "$uri": "/entrepreneur.json",
   "$permissions" : {
-
-
+    "$role" : "app-user",
+    "$capability" : "read"
   }
 }

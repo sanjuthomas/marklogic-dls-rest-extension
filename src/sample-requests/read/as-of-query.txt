@@ -1,0 +1,30 @@
+Sample Request:
+
+http://host:port/v1/resources/dls-rest-extension?rs:dls-function=dls:as-of-query&rs:$when=2016-06-17T09:55:04.139262-04:00
+
+Sample Response:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<cts:properties-fragment-query xmlns:cts="http://marklogic.com/cts">
+    <cts:and-query>
+        <cts:element-range-query operator="&lt;=" weight="0">
+            <cts:element xmlns:dls="http://marklogic.com/xdmp/dls">dls:created</cts:element>
+            <cts:value xsi:type="xs:dateTime" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2016-06-17T09:55:04.139262-04:00</cts:value>
+        </cts:element-range-query>
+        <cts:or-query>
+            <cts:element-range-query operator="&gt;" weight="0">
+                <cts:element xmlns:dls="http://marklogic.com/xdmp/dls">dls:replaced</cts:element>
+                <cts:value xsi:type="xs:dateTime" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2016-06-17T09:55:04.139262-04:00</cts:value>
+            </cts:element-range-query>
+            <cts:element-value-query weight="0">
+                <cts:element xmlns:dls="http://marklogic.com/xdmp/dls">dls:latest</cts:element>
+                <cts:text xml:lang="en">true</cts:text>
+            </cts:element-value-query>
+        </cts:or-query>
+        <cts:element-value-query weight="0">
+            <cts:element xmlns:dls="http://marklogic.com/xdmp/dls">dls:version-id</cts:element>
+            <cts:text xml:lang="en">*</cts:text>
+            <cts:option>wildcarded</cts:option>
+        </cts:element-value-query>
+    </cts:and-query>
+</cts:properties-fragment-query>
