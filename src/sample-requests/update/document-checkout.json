@@ -1,0 +1,5 @@
+{
+  "$dls-function": "dls:document-checkout",
+  "$uri": "/entrepreneur.json",
+  "$deep" : true
+}

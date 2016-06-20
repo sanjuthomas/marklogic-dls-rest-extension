@@ -10,8 +10,8 @@ var documentInsertAndManage = function(params){
     return params["$uri"];
 }
 
-var dlsBreakCheckout = function(params){
-    dls.dlsBreakCheckout(params["$uri"], params["$deep"]);
+var breakCheckout = function(params){
+    dls.breakCheckout(params["$uri"], params["$deep"]);
     return params["$uri"];
 }
 
@@ -42,22 +42,36 @@ var documentRemoveCollections = function(params){
     return params["$uri"];
 }
 
+var documentCheckin = function(params){
+    dls.documentCheckin(params["$uri"], params["$deep"]);
+    return params["$uri"];
+}
+
+var documentCheckout = function(params){
+    dls.documentCheckout(params["$uri"], params["$deep"]);
+    return params["$uri"];
+}
+
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
-    "dls:break-checkout" : dlsBreakCheckout,
+    "dls:break-checkout" : breakCheckout,
     "dls:document-add-collections" : documentAddCollections,
     "dls:document-add-permissions" : documentAddPermissions,
     "dls:document-add-properties" : documentAddProperties,
-    "dls:document-remove-collections" : documentRemoveCollections
+    "dls:document-remove-collections" : documentRemoveCollections,
+    "dls:document-checkin" : documentCheckin,
+    "dls:document-checkout" : documentCheckout
 }
 
 
-exports.dlsBreakCheckout = dlsBreakCheckout;
 exports.documentAddCollections = documentAddCollections;
 exports.documentInsertAndManage = documentInsertAndManage;
 exports.documentAddPermissions = documentAddPermissions;
 exports.documentAddProperties = documentAddProperties;
 exports.documentRemoveCollections = documentRemoveCollections;
+exports.documentCheckin = documentCheckin;
+exports.documentCheckout = documentCheckout;
+exports.breakCheckout = breakCheckout;
 exports.functionMapping = functionMapping;
 
 
