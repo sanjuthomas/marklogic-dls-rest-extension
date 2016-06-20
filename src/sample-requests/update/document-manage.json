@@ -1,0 +1,5 @@
+{
+  "$dls-function": "dls:document-manage",
+  "$uri": "/entrepreneur.json",
+  "$deep" : true
+}

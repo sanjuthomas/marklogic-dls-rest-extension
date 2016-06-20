@@ -62,6 +62,21 @@ var documentDelete = function(params){
     return params["$uri"];
 }
 
+var documentManage = function(params){
+    dls.documentManage(params["$uri"], params["$deep"]);
+    return params["$uri"];
+}
+
+var documentUnmanage = function(params){
+    dls.documentUnmanage(params["$uri"], params["$deep"], params["$remove-versions"]);
+    return params["$uri"];
+}
+
+var documentVersionDelete = function(params){
+    dls.documentVersionDelete(params["$uri"], params["$version"], params["$retain-history"]);
+    return params["$uri"];
+}
+
 
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
@@ -73,9 +88,11 @@ var functionMapping = {
     "dls:document-checkin" : documentCheckin,
     "dls:document-checkout" : documentCheckout,
     "dls:document-checkout-update-checkin" : documentCheckoutUpdateCheckin,
-    "dls:document-delete" : documentDelete
+    "dls:document-delete" : documentDelete,
+    "dls:document-manage" : documentManage,
+    "dls:document-unmanage" : documentUnmanage,
+    "dls:document-version-delete" : documentVersionDelete
 }
-
 
 exports.documentAddCollections = documentAddCollections;
 exports.documentInsertAndManage = documentInsertAndManage;
@@ -87,6 +104,9 @@ exports.documentCheckout = documentCheckout;
 exports.breakCheckout = breakCheckout;
 exports.documentCheckoutUpdateCheckin = documentCheckoutUpdateCheckin;
 exports.documentDelete = documentDelete;
+exports.documentManage = documentManage;
+exports.documentUnmanage = documentUnmanage;
+exports.documentVersionDelete = documentVersionDelete;
 exports.functionMapping = functionMapping;
 
 

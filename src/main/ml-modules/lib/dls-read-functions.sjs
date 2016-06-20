@@ -40,6 +40,18 @@ var documentHistory = function(params){
     return dls.documentHistory(params["$uri"]);
 }
 
+var documentIsManaged = function(params){
+    return dls.documentIsManaged(params["$uri"]);
+}
+
+var documentVersion = function(params){
+    return dls.documentVersion(params["$uri"], params["$version-number"]);
+}
+
+var documentVersionAsOf = function(params){
+    return dls.documentVersionAsOf(params["$uri"], params["$as-of"]);
+}
+
 var functionMapping = {
     "dls:as-of-query" : asOfQuery,
     "dls:author-query" : authorQuery,
@@ -49,7 +61,10 @@ var functionMapping = {
     "dls:documents-query" : documentsQuery,
     "dls:document-get-permissions" : documentGetPermissions,
     "dls:document-checkout-status" : documentCheckoutStatus,
-    "dls:document-history" : documentHistory
+    "dls:document-history" : documentHistory,
+    "dls:document-is-managed" : documentIsManaged,
+    "dls:document-version" : documentVersion,
+    "dls:document-version-as-of" : documentVersionAsOf
 }
 
 exports.functionMapping = functionMapping;
@@ -62,3 +77,6 @@ exports.documentsQuery = documentsQuery;
 exports.documentGetPermissions = documentGetPermissions;
 exports.documentCheckoutStatus = documentCheckoutStatus;
 exports.documentHistory = documentHistory;
+exports.documentIsManaged = documentIsManaged;
+exports.documentVersion = documentVersion;
+exports.documentVersionAsOf = documentVersionAsOf;

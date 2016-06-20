@@ -1,0 +1,6 @@
+{
+  "$dls-function": "dls:document-unmanage",
+  "$uri": "/entrepreneur.json",
+  "$deep" : true,
+  "$remove-versions" : true
+}

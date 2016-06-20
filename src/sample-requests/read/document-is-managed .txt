@@ -1,0 +1,7 @@
+Sample Request:
+
+http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:document-is-managed&rs:$uri=/entrepreneur.json
+
+Sample Response:
+
+true

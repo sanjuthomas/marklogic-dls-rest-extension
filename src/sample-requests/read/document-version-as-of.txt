@@ -1,0 +1,12 @@
+Sample Request:
+
+http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:document-version-as-of&rs:$uri=/entrepreneur.json&rs:$as-of=2016-06-20T11:00:00.139262-04:00
+
+Sample Response:
+
+{
+  "id": 1,
+  "fName": "Sanju",
+  "lName": "Thomas",
+  "city": "NYC"
+}
