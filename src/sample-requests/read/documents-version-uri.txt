@@ -1,0 +1,10 @@
+Sample Request:
+
+http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:document-version-uri&rs:$document-uri=/entrepreneur.json&rs:$version=1
+
+Sample Response:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<cts:collection-query xmlns:cts="http://marklogic.com/cts">
+    <cts:uri>http://marklogic.com/collections/dls/latest-version</cts:uri>
+</cts:collection-query>

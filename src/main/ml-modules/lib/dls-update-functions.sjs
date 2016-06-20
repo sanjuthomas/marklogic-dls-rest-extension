@@ -21,6 +21,11 @@ var documentAddCollections = function(params){
 }
 
 var documentAddPermissions = function(params){
+    dls.documentAddPermissions(params["$uri"], getPermissions(params));
+    return params["$uri"];
+}
+
+getPermissions = function(params){
     var permissions = [];
     var permissionObjects = [];
     var permission = params["$permissions"];
@@ -28,7 +33,10 @@ var documentAddPermissions = function(params){
     permissions.forEach(function(p){
         permissionObjects.push(xdmp.permission(p["$roleId"], p["$capability"]));
     });
-    dls.documentAddPermissions(params["$uri"], permissionObjects);
+}
+
+var documentRemovePermissions = function(params){
+    dls.documentRemovePermissions(params["$uri"], getPermissions(params));
     return params["$uri"];
 }
 
@@ -77,6 +85,14 @@ var documentVersionDelete = function(params){
     return params["$uri"];
 }
 
+var documentUpdate = function(params){
+    dls.documentUpdate(params["$uri"], params["$doc"], params["$annotation"], params["$retain-history"]);
+    return params["$uri"];
+}
+
+var documentRemoveProperties = function(params){
+
+}
 
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
@@ -91,9 +107,13 @@ var functionMapping = {
     "dls:document-delete" : documentDelete,
     "dls:document-manage" : documentManage,
     "dls:document-unmanage" : documentUnmanage,
-    "dls:document-version-delete" : documentVersionDelete
+    "dls:document-version-delete" : documentVersionDelete,
+    "dls:document-update" : documentUpdate,
+    "dls:document-remove-permissions" : documentRemovePermissions,
+    "dls:document-remove-properties" : documentRemoveProperties
 }
 
+exports.documentRemovePermissions = documentRemovePermissions;
 exports.documentAddCollections = documentAddCollections;
 exports.documentInsertAndManage = documentInsertAndManage;
 exports.documentAddPermissions = documentAddPermissions;
@@ -107,6 +127,8 @@ exports.documentDelete = documentDelete;
 exports.documentManage = documentManage;
 exports.documentUnmanage = documentUnmanage;
 exports.documentVersionDelete = documentVersionDelete;
+exports.documentUpdate = documentUpdate;
+exports.documentRemoveProperties = documentRemoveProperties;
 exports.functionMapping = functionMapping;
 
 

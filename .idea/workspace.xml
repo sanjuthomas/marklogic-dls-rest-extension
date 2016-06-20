@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2880388c-a48f-41cb-87c8-13c0886ee850" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/read/document-is-managed .txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/read/document-version-as-of.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/read/document-version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/update/document-manage.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/update/document-unmanage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/read/documents-version-uri.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/update/document-remove-permissions.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/update/document-update.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/ml-last-configured-timestamps.properties" afterPath="$PROJECT_DIR$/build/ml-last-configured-timestamps.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-read-functions.sjs" afterPath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-read-functions.sjs" />
@@ -49,7 +47,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-read-functions.sjs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="documents-version-uri.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/documents-version-uri.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -58,88 +66,78 @@
       <file leaf-file-name="dls-update-functions.sjs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49304175">
-              <caret line="84" column="60" selection-start-line="84" selection-start-column="60" selection-end-line="84" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.582505">
+              <caret line="112" column="63" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-version.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-version.txt">
+      <file leaf-file-name="document-update.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-update.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-version-as-of.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-version-as-of.txt">
+      <file leaf-file-name="document-checkout.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-checkout.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dls-function-conf.sjs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs">
+      <file leaf-file-name="break-checkout.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/break-checkout.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="148" column="31" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="31" />
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-is-managed .txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-is-managed .txt">
+      <file leaf-file-name="document-add-collections.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-history.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-history.txt">
+      <file leaf-file-name="document-add-permissions.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-permissions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="95" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="113" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-get-permissions.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-get-permissions.txt">
+      <file leaf-file-name="document-remove-permissions.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-remove-permissions.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="121" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-checkout-status.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-checkout-status.txt">
+      <file leaf-file-name="document-add-properties.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-properties.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="as-of-query.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/read/as-of-query.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="91" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="123" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -748,7 +746,6 @@
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-insert-and-manage.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/as-of-query.txt" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/documents-query.txt" />
-        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/document-get-permissions.txt" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-remove-collections.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/break-checkout.json" />
@@ -764,8 +761,12 @@
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-unmanage.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/document-version.txt" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/document-version-as-of.txt" />
-        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs" />
+        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs" />
+        <option value="$PROJECT_DIR$/src/sample-requests/read/documents-version-uri.txt" />
         <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-read-functions.sjs" />
+        <option value="$PROJECT_DIR$/src/sample-requests/update/document-update.json" />
+        <option value="$PROJECT_DIR$/src/sample-requests/update/document-remove-permissions.json" />
+        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs" />
       </list>
     </option>
   </component>
@@ -998,8 +999,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/sample-requests/read" />
       <recent name="$PROJECT_DIR$/src/sample-requests/update" />
+      <recent name="$PROJECT_DIR$/src/sample-requests/read" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.testtest.js">
@@ -1122,14 +1123,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-remove-collections.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1296,13 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-remove-collections.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.061099797">
@@ -1311,50 +1297,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.061099797">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-permissions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.015274949">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-properties.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.015274949">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-insert-and-manage.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-checkout.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1383,14 +1329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/break-checkout.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-manage.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
@@ -1403,14 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/read/documents-query.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="85" />
           <folding />
         </state>
       </provider>
@@ -1439,26 +1369,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-checkout-status.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/read/as-of-query.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="91" selection-start-line="2" selection-start-column="91" selection-end-line="2" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="148" column="31" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1471,10 +1385,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/read/documents-query.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-version-as-of.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="2" column="119" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/read/document-checkout-status.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="140" column="24" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/break-checkout.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-properties.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-checkout.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/read/documents-version-uri.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1482,15 +1476,39 @@
     <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-read-functions.sjs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-permissions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-remove-permissions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-update.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49304175">
-          <caret line="84" column="60" selection-start-line="84" selection-start-column="60" selection-end-line="84" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.582505">
+          <caret line="112" column="63" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="63" />
           <folding />
         </state>
       </provider>

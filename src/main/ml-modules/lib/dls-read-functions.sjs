@@ -52,6 +52,14 @@ var documentVersionAsOf = function(params){
     return dls.documentVersionAsOf(params["$uri"], params["$as-of"]);
 }
 
+var documentVersionUri = function(params){
+    return dls.documentVersionUri(params["$document-uri"], params["$version"])
+}
+
+var documentVersionUris = function(params){
+    return dls.documentVersionUris(params["$uri"]);
+}
+
 var functionMapping = {
     "dls:as-of-query" : asOfQuery,
     "dls:author-query" : authorQuery,
@@ -64,7 +72,9 @@ var functionMapping = {
     "dls:document-history" : documentHistory,
     "dls:document-is-managed" : documentIsManaged,
     "dls:document-version" : documentVersion,
-    "dls:document-version-as-of" : documentVersionAsOf
+    "dls:document-version-as-of" : documentVersionAsOf,
+    "dls:document-version-uri" : documentVersionUri,
+    "dls:document-version-uris" : documentVersionUris
 }
 
 exports.functionMapping = functionMapping;
@@ -80,3 +90,5 @@ exports.documentHistory = documentHistory;
 exports.documentIsManaged = documentIsManaged;
 exports.documentVersion = documentVersion;
 exports.documentVersionAsOf = documentVersionAsOf;
+exports.documentVersionUri = documentVersionUri;
+exports.documentVersionUris = documentVersionUris;

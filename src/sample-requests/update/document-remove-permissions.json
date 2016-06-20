@@ -1,0 +1,10 @@
+{
+  "$dls-function": "dls:document-remove-permissions",
+  "$uri": "/entrepreneur.json",
+  "$permissions": [
+    {
+      "$roleId": "dls-user",
+      "$capability": "read"
+    }
+  ]
+}
