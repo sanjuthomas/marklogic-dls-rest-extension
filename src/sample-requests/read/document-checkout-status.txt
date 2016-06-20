@@ -1,1 +1,15 @@
+Sample Request:
+
 http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:document-checkout-status&rs:$uri=/entrepreneur.json
+
+
+Sample Response:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<dls:checkout xmlns:dls="http://marklogic.com/xdmp/dls">
+    <dls:document-uri>/entrepreneur.json</dls:document-uri>
+    <dls:annotation>admin</dls:annotation>
+    <dls:timeout>0</dls:timeout>
+    <dls:timestamp>1466431834</dls:timestamp>
+    <sec:user-id xmlns:sec="http://marklogic.com/xdmp/security">7071164303237443533</sec:user-id>
+</dls:checkout>
