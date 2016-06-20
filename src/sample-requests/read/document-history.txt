@@ -1,0 +1,20 @@
+Sample Request:
+
+http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:document-history&rs:$uri=/entrepreneur.json
+
+Sample Response:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<dls:document-history uri="/entrepreneur.json" xmlns:dls="http://marklogic.com/xdmp/dls">
+    <dls:version>
+        <dls:version-id>1</dls:version-id>
+        <dls:document-uri>/entrepreneur.json</dls:document-uri>
+        <dls:latest>true</dls:latest>
+        <dls:created>2016-06-20T10:46:29.248838-04:00</dls:created>
+        <dls:author>7071164303237443533</dls:author>
+        <dls:external-security-id>0</dls:external-security-id>
+        <dls:external-user-name/>
+        <dls:annotation/>
+        <dls:deleted>false</dls:deleted>
+    </dls:version>
+</dls:document-history>

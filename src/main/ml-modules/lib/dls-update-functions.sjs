@@ -52,6 +52,17 @@ var documentCheckout = function(params){
     return params["$uri"];
 }
 
+var documentCheckoutUpdateCheckin = function(params){
+    dls.documentCheckoutUpdateCheckin(params["$uri"], params["$doc"], params["$annotation"], params["$retain-history"]);
+    return params["$uri"];
+}
+
+var documentDelete = function(params){
+    dls.documentDelete(params["$uri"], params["$keep-old-versions"], params["$retain-history"]);
+    return params["$uri"];
+}
+
+
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
     "dls:break-checkout" : breakCheckout,
@@ -60,7 +71,9 @@ var functionMapping = {
     "dls:document-add-properties" : documentAddProperties,
     "dls:document-remove-collections" : documentRemoveCollections,
     "dls:document-checkin" : documentCheckin,
-    "dls:document-checkout" : documentCheckout
+    "dls:document-checkout" : documentCheckout,
+    "dls:document-checkout-update-checkin" : documentCheckoutUpdateCheckin,
+    "dls:document-delete" : documentDelete
 }
 
 
@@ -72,6 +85,8 @@ exports.documentRemoveCollections = documentRemoveCollections;
 exports.documentCheckin = documentCheckin;
 exports.documentCheckout = documentCheckout;
 exports.breakCheckout = breakCheckout;
+exports.documentCheckoutUpdateCheckin = documentCheckoutUpdateCheckin;
+exports.documentDelete = documentDelete;
 exports.functionMapping = functionMapping;
 
 

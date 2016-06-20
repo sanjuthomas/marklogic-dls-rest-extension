@@ -65,7 +65,7 @@ var methods = {
         "optional": []
     },
     "dls:document-delete" : {
-        "mandatory" : ["$uri", "$keep-old-versions", "$retain-history "],
+        "mandatory" : ["$uri", "$keep-old-versions", "$retain-history"],
         "optional": []
     },
     "dls:document-extract-part" : {

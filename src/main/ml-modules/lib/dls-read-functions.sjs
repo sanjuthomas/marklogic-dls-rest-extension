@@ -36,6 +36,10 @@ var documentCheckoutStatus = function(params){
     return dls.documentCheckoutStatus(params["$uri"]);
 }
 
+var documentHistory = function(params){
+    return dls.documentHistory(params["$uri"]);
+}
+
 var functionMapping = {
     "dls:as-of-query" : asOfQuery,
     "dls:author-query" : authorQuery,
@@ -44,7 +48,8 @@ var functionMapping = {
     "dls:document-versions-query" : documentVersionsQuery,
     "dls:documents-query" : documentsQuery,
     "dls:document-get-permissions" : documentGetPermissions,
-    "dls:document-checkout-status" : documentCheckoutStatus
+    "dls:document-checkout-status" : documentCheckoutStatus,
+    "dls:document-history" : documentHistory
 }
 
 exports.functionMapping = functionMapping;
@@ -56,3 +61,4 @@ exports.documentVersionsQuery = documentVersionsQuery;
 exports.documentsQuery = documentsQuery;
 exports.documentGetPermissions = documentGetPermissions;
 exports.documentCheckoutStatus = documentCheckoutStatus;
+exports.documentHistory = documentHistory;

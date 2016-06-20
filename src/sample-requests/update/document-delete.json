@@ -1,0 +1,6 @@
+{
+  "$dls-function": "dls:document-delete",
+  "$uri": "/entrepreneur.json",
+  "$keep-old-versions" : false,
+  "$retain-history" : false
+}
