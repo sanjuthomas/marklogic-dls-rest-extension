@@ -4,50 +4,50 @@
 
 var configuration = require("/lib/dls-function-conf.sjs");
 
-validateParams = function(methodName, params){
+validateParams = function (methodName, params) {
 
     var validationResult = {
-        "inputValidationResult" : true,
-        "missingParams" : []
+        "inputValidationResult": true,
+        "missingParams": []
     }
 
-    if(undefined == methodName){
-        populateErrorMessage(validationResult, "dls-function");
-    }
+    if (undefined == methodName) {
+        populateErrorMessage(validationResult, "$dls-function");
+    } else {
+        //validate if all the mandatory params exist in the request
+        var mandatoryArguments = configuration.methods[methodName].mandatory;
+        mandatoryArguments.forEach(function (e) {
+            var argument = params[e]
+            if (undefined === argument) {
+                populateErrorMessage(validationResult, e);
+            }
+        });
 
-    //validate if all the mandatory params exist in the request
-    var mandatoryArguments = configuration.methods[methodName].mandatory;
-    mandatoryArguments.forEach(function(e){
-        var argument = params[e]
-        if(undefined === argument){
-            populateErrorMessage(validationResult, e);
+        //validate if the params are in correct structure
+        if (true === validationResult.inputValidationResult) {
+            validateObjectParam(methodName, params, validationResult)
         }
-    });
-
-    //validate if the params are in correct structure
-    if(true === validationResult.inputValidationResult){
-        validateObjectParam(methodName, params, validationResult)
     }
     return validationResult;
 }
 
 
-populateErrorMessage = function(validationResult, argument){
+populateErrorMessage = function (validationResult, argument) {
     validationResult.inputValidationResult = "Input validation failed."
     validationResult.missingParams.push(argument);
     validationResult.reason = "Mandatory arguments are missing."
 }
 
-validateObjectParam = function(methodName, params, validationResult){
+validateObjectParam = function (methodName, params, validationResult) {
     var paramsToValidate = configuration.methods[methodName].paramsToValidate
-    if(undefined !== paramsToValidate){
-        paramsToValidate.forEach(function(p){
+    if (undefined !== paramsToValidate) {
+        paramsToValidate.forEach(function (p) {
             var paramsValuesToValidate = getParamValuesValidate(params, p);
-            paramsValuesToValidate.forEach(function(paramToValidate){
+            paramsValuesToValidate.forEach(function (paramToValidate) {
                 var parameterObject = configuration.parameters[p];
                 var mandatoryElements = parameterObject.mandatory;
-                mandatoryElements.forEach(function(a){
-                    if(undefined === paramToValidate[a]){
+                mandatoryElements.forEach(function (a) {
+                    if (undefined === paramToValidate[a]) {
                         validationResult.inputValidationResult = "Input validation failed.";
                         validationResult.reason = "One or more input parameter is not in correct structure.";
                         validationResult.paramterName = p;
@@ -59,12 +59,12 @@ validateObjectParam = function(methodName, params, validationResult){
     }
 }
 
-getParamValuesValidate = function(params, p){
+getParamValuesValidate = function (params, p) {
     var toArray = [];
     var paramToValidate = params[p];
-    if(paramToValidate instanceof Array){
+    if (paramToValidate instanceof Array) {
         toArray = paramToValidate;
-    }else{
+    } else {
         toArray.push(paramToValidate);
     }
     return toArray;

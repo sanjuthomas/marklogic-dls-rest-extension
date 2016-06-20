@@ -1,6 +1,6 @@
 Sample Request:
 
-http://host:port/v1/resources/dls-rest-extension?rs:dls-function=dls:as-of-query&rs:$when=2016-06-17T09:55:04.139262-04:00
+http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:as-of-query&rs:$when=2016-06-17T09:55:04.139262-04:00
 
 Sample Response:
 

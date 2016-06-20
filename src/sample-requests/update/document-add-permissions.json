@@ -1,5 +1,5 @@
 {
-  "dls-function": "dls:document-add-permissions",
+  "$dls-function": "dls:document-add-permissions",
   "$uri": "/entrepreneur.json",
   "$permissions": [
     {

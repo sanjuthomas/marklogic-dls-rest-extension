@@ -28,13 +28,18 @@ var documentsQuery = function(params){
     return dls.documentsQuery()
 }
 
+var documentGetPermissions = function(params){
+    return dls.documentGetPermissions(params["$uri"])
+}
+
 var functionMapping = {
     "dls:as-of-query" : asOfQuery,
     "dls:author-query" : authorQuery,
     "dls:document-include-query" : documentIncludeQuery,
     "dls:document-version-query" : documentVersionQuery,
     "dls:document-versions-query" : documentVersionsQuery,
-    "dls:documents-query" : documentsQuery
+    "dls:documents-query" : documentsQuery,
+    "dls:document-get-permissions" : documentGetPermissions
 }
 
 exports.functionMapping = functionMapping;
@@ -44,4 +49,4 @@ exports.documentIncludeQuery = documentIncludeQuery;
 exports.documentVersionQuery = documentVersionQuery;
 exports.documentVersionsQuery = documentVersionsQuery;
 exports.documentsQuery = documentsQuery;
-
+exports.documentGetPermissions = documentGetPermissions;

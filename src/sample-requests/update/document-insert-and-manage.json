@@ -1,5 +1,5 @@
 {
-  "dls-function": "dls:document-insert-and-manage",
+  "$dls-function": "dls:document-insert-and-manage",
   "$uri": "/entrepreneur.json",
   "$deep": false,
   "$doc": {

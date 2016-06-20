@@ -1,6 +1,6 @@
 Sample Request:
 
-http://host:port/v1/resources/dls-rest-extension?rs:dls-function=dls:documents-query
+http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:documents-query
 
 Sample Response:
 

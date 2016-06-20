@@ -1,0 +1,35 @@
+Sample Request:
+
+http://host:port/v1/resources/dls-rest-extension?rs:$dls-function=dls:document-get-permissions&rs:$uri=/entrepreneur.json
+
+Sample Response:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<sec:permission xmlns:sec="http://marklogic.com/xdmp/security">
+    <sec:capability>read</sec:capability>
+    <sec:role-id>6379823953448655712</sec:role-id>
+</sec:permission>
+--dls-rest-extension-get-result
+Content-Type: application/xml
+Content-Length: 212
+<?xml version="1.0" encoding="UTF-8"?>
+<sec:permission xmlns:sec="http://marklogic.com/xdmp/security">
+    <sec:capability>update</sec:capability>
+    <sec:role-id>12116624312845666538</sec:role-id>
+</sec:permission>
+--dls-rest-extension-get-result
+Content-Type: application/xml
+Content-Length: 209
+<?xml version="1.0" encoding="UTF-8"?>
+<sec:permission xmlns:sec="http://marklogic.com/xdmp/security">
+    <sec:capability>read</sec:capability>
+    <sec:role-id>5189219641378676758</sec:role-id>
+</sec:permission>
+--dls-rest-extension-get-result
+Content-Type: application/xml
+Content-Length: 211
+<?xml version="1.0" encoding="UTF-8"?>
+<sec:permission xmlns:sec="http://marklogic.com/xdmp/security">
+    <sec:capability>update</sec:capability>
+    <sec:role-id>5189219641378676758</sec:role-id>
+</sec:permission>
