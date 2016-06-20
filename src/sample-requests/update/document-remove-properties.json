@@ -1,0 +1,5 @@
+{
+  "$dls-function": "dls:document-remove-properties",
+  "$uri": "/entrepreneur.json",
+  "$property-names":["hOffset", "vOffset"]
+}

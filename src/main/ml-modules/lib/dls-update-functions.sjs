@@ -28,11 +28,11 @@ var documentAddPermissions = function(params){
 getPermissions = function(params){
     var permissions = [];
     var permissionObjects = [];
-    var permission = params["$permissions"];
-    permissions = permissions.concat(permission);
+    permissions = permissions.concat(params["$permissions"]);
     permissions.forEach(function(p){
         permissionObjects.push(xdmp.permission(p["$roleId"], p["$capability"]));
     });
+    return permissionObjects;
 }
 
 var documentRemovePermissions = function(params){
@@ -41,8 +41,24 @@ var documentRemovePermissions = function(params){
 }
 
 var documentAddProperties = function(params){
-    dls.documentAddProperties(params["$uri"], json.transformFromJson(params["$properties"]));
+    dls.documentAddProperties(params["$uri"], buildNodes(params));
     return params["$uri"];
+}
+
+buildNodes = function(params) {
+    var nodes = [];
+    var properties = [];
+    properties = properties.concat(params["$properties"]);
+    properties.forEach(function(p){
+        for(key in p){
+            var builder = new NodeBuilder();
+            builder.startElement(key);
+            builder.addText(String(p[key]));
+            builder.endElement();
+            nodes.push(builder.toNode());
+        }
+    });
+    return nodes;
 }
 
 var documentRemoveCollections = function(params){
@@ -91,8 +107,20 @@ var documentUpdate = function(params){
 }
 
 var documentRemoveProperties = function(params){
-
+    dls.documentRemoveProperties(params["$uri"], getProperties(params));
+    return params["$uri"];
 }
+
+getProperties = function(params){
+    var properties = [];
+    var propertiesObject = [];
+    properties = properties.concat(params["$property-names"]);
+    properties.forEach(function(e){
+        propertiesObject.push(fn.QName("http://marklogic.com/xdmp/property", e));
+    });
+    return propertiesObject;
+}
+
 
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
