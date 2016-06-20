@@ -1,0 +1,5 @@
+{
+  "$dls-function": "dls:document-remove-collections",
+  "$uri": "/entrepreneur.json",
+  "$collections" : ["Consultant"]
+}

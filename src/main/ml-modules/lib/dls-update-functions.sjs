@@ -37,12 +37,18 @@ var documentAddProperties = function(params){
     return params["$uri"];
 }
 
+var documentRemoveCollections = function(params){
+    dls.documentRemoveCollections(params["$uri"], params["$collections"]);
+    return params["$uri"];
+}
+
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
     "dls:break-checkout" : dlsBreakCheckout,
     "dls:document-add-collections" : documentAddCollections,
     "dls:document-add-permissions" : documentAddPermissions,
-    "dls:document-add-properties" : documentAddProperties
+    "dls:document-add-properties" : documentAddProperties,
+    "dls:document-remove-collections" : documentRemoveCollections
 }
 
 
@@ -51,6 +57,7 @@ exports.documentAddCollections = documentAddCollections;
 exports.documentInsertAndManage = documentInsertAndManage;
 exports.documentAddPermissions = documentAddPermissions;
 exports.documentAddProperties = documentAddProperties;
+exports.documentRemoveCollections = documentRemoveCollections;
 exports.functionMapping = functionMapping;
 
 
