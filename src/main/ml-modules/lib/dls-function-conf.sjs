@@ -182,7 +182,7 @@ var methods = {
 
 var parameters = {
     "$permissions" : {
-        mandatory : ["$role", "$capability"]
+        mandatory : ["$roleId", "$capability"]
     }
 }
 

@@ -10,7 +10,7 @@ invoke = function(methodType, methodName, params){
     if("GET" === methodType){
         var method = readFunctions.functionMapping[methodName];
         return method.call(this, params);
-    }else if("POST" === methodType){
+    }else if("PUT" === methodType){
         var method = updateFunctions.functionMapping[methodName];
         return method.call(this, params);
     }

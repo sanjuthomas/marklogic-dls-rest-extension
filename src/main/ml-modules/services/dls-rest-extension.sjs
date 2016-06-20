@@ -10,7 +10,7 @@ function put(context, params, input) {
     var methodName = inputObject["dls-function"];
     var validationResult = validator.validateParams(methodName, inputObject);
     if(validationResult.inputValidationResult === true){
-        return dlsFunctions.invoke("POST", methodName, inputObject);
+        return dlsFunctions.invoke("PUT", methodName, inputObject);
     }
     return validationResult;
 };

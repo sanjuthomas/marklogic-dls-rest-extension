@@ -3,6 +3,7 @@
  */
 
 var dls = require("/MarkLogic/dls.xqy");
+var json = require("/MarkLogic/json/json.xqy");
 
 var documentInsertAndManage = function(params){
     dls.documentInsertAndManage(params["$uri"], params["$deep"], params["$doc"]);
@@ -20,14 +21,28 @@ var documentAddCollections = function(params){
 }
 
 var documentAddPermissions = function(params){
-    dls.documentAddPermissions(params["$uri"], params["$permissions"])
+    var permissions = [];
+    var permissionObjects = [];
+    var permission = params["$permissions"];
+    permissions = permissions.concat(permission);
+    permissions.forEach(function(p){
+        permissionObjects.push(xdmp.permission(p["$roleId"], p["$capability"]));
+    });
+    dls.documentAddPermissions(params["$uri"], permissionObjects);
+    return params["$uri"];
+}
+
+var documentAddProperties = function(params){
+    dls.documentAddProperties(params["$uri"], json.transformFromJson(params["$properties"]));
+    return params["$uri"];
 }
 
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
     "dls:break-checkout" : dlsBreakCheckout,
     "dls:document-add-collections" : documentAddCollections,
-    "document-add-permissions" : documentAddPermissions
+    "dls:document-add-permissions" : documentAddPermissions,
+    "dls:document-add-properties" : documentAddProperties
 }
 
 
@@ -35,6 +50,7 @@ exports.dlsBreakCheckout = dlsBreakCheckout;
 exports.documentAddCollections = documentAddCollections;
 exports.documentInsertAndManage = documentInsertAndManage;
 exports.documentAddPermissions = documentAddPermissions;
+exports.documentAddProperties = documentAddProperties;
 exports.functionMapping = functionMapping;
 
 

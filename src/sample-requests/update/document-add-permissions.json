@@ -1,8 +1,14 @@
 {
   "dls-function": "dls:document-add-permissions",
   "$uri": "/entrepreneur.json",
-  "$permissions" : {
-    "$role" : "app-user",
-    "$capability" : "read"
-  }
+  "$permissions": [
+    {
+      "$roleId": "dls-user",
+      "$capability": "read"
+    },
+    {
+      "$roleId": "dls-admin",
+      "$capability": "update"
+    }
+  ]
 }

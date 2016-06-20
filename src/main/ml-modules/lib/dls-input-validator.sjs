@@ -42,19 +42,32 @@ validateObjectParam = function(methodName, params, validationResult){
     var paramsToValidate = configuration.methods[methodName].paramsToValidate
     if(undefined !== paramsToValidate){
         paramsToValidate.forEach(function(p){
-            var paramToValidate = params[p];
-            var parameterObject = configuration.parameters[p];
-            var mandatoryElements = parameterObject.mandatory;
-            mandatoryElements.forEach(function(a){
-                if(undefined === paramToValidate[a]){
-                    validationResult.inputValidationResult = "Input validation failed.";
-                    validationResult.reason = "One or more input parameter is not in correct structure.";
-                    validationResult.paramterName = p;
-                    validationResult.missingElements = mandatoryElements;
-                }
-            })
-        })
+            var paramsValuesToValidate = getParamValuesValidate(params, p);
+            paramsValuesToValidate.forEach(function(paramToValidate){
+                var parameterObject = configuration.parameters[p];
+                var mandatoryElements = parameterObject.mandatory;
+                mandatoryElements.forEach(function(a){
+                    if(undefined === paramToValidate[a]){
+                        validationResult.inputValidationResult = "Input validation failed.";
+                        validationResult.reason = "One or more input parameter is not in correct structure.";
+                        validationResult.paramterName = p;
+                        validationResult.missingElements = mandatoryElements;
+                    }
+                });
+            });
+        });
     }
+}
+
+getParamValuesValidate = function(params, p){
+    var toArray = [];
+    var paramToValidate = params[p];
+    if(paramToValidate instanceof Array){
+        toArray = paramToValidate;
+    }else{
+        toArray.push(paramToValidate);
+    }
+    return toArray;
 }
 
 exports.validateParams = validateParams;
