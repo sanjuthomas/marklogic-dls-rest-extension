@@ -121,6 +121,22 @@ getProperties = function(params){
     return propertiesObject;
 }
 
+var documentSetCollections = function(params){
+    dls.documentSetCollections(params["$uri"], params["$collections"]);
+    return params["$uri"];
+}
+
+var documentSetPermissions = function(params){
+    dls.documentSetPermissions(params["$uri"], getPermissions(params));
+    return params["$uri"];
+}
+
+var documentSetProperties = function(params){
+    dls.documentSetProperties(params["$uri"], buildNodes(params));
+    return params["$uri"];
+}
+
+
 
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
@@ -138,9 +154,13 @@ var functionMapping = {
     "dls:document-version-delete" : documentVersionDelete,
     "dls:document-update" : documentUpdate,
     "dls:document-remove-permissions" : documentRemovePermissions,
-    "dls:document-remove-properties" : documentRemoveProperties
+    "dls:document-remove-properties" : documentRemoveProperties,
+    "dls:document-set-collections" : documentSetCollections,
+    "dls:document-set-permissions" : documentSetPermissions,
+    "dls:document-set-properties" : documentSetProperties
 }
 
+exports.documentSetProperties = documentSetProperties;
 exports.documentRemovePermissions = documentRemovePermissions;
 exports.documentAddCollections = documentAddCollections;
 exports.documentInsertAndManage = documentInsertAndManage;
@@ -157,6 +177,8 @@ exports.documentUnmanage = documentUnmanage;
 exports.documentVersionDelete = documentVersionDelete;
 exports.documentUpdate = documentUpdate;
 exports.documentRemoveProperties = documentRemoveProperties;
+exports.documentSetCollections = documentSetCollections;
+exports.documentSetPermissions = documentSetPermissions;
 exports.functionMapping = functionMapping;
 
 
