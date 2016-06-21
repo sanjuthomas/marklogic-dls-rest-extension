@@ -14,7 +14,7 @@ cd marklogic-dls-rest-extension
 
 gradle mlDeploy
 
-Sample Requests for both read and update functions are available [here](https://github.com/sanjuthomas/marklogic-dls-rest-extension/tree/master/src/sample-requests). You may use a standard REST client line Postman to test.
+Sample Requests for both read and update functions are available [here](https://github.com/sanjuthomas/marklogic-dls-rest-extension/tree/master/src/sample-requests). You may use a standard REST client like Postman to test.
 
 ## Contact
 Please contact me at ml@sanju.org if you find any issues or looking for clarification.
