@@ -136,7 +136,15 @@ var documentSetProperties = function(params){
     return params["$uri"];
 }
 
+var documentSetProperty = function(params){
+    dls.documentSetProperties(params["$uri"], buildNodes(params))
+    return params["$uri"];
+}
 
+var documentSetQuality = function(params){
+    dls.documentSetQuality(params["$uri"], params["$quality"]);
+    return params["$uri"];
+}
 
 var functionMapping = {
     "dls:document-insert-and-manage" : documentInsertAndManage,
@@ -157,9 +165,13 @@ var functionMapping = {
     "dls:document-remove-properties" : documentRemoveProperties,
     "dls:document-set-collections" : documentSetCollections,
     "dls:document-set-permissions" : documentSetPermissions,
-    "dls:document-set-properties" : documentSetProperties
+    "dls:document-set-properties" : documentSetProperties,
+    "dls:document-set-property" : documentSetProperty,
+    "dls:document-set-quality" : documentSetQuality
 }
 
+exports.documentSetQuality = documentSetQuality;
+exports.documentSetProperty = documentSetProperty;
 exports.documentSetProperties = documentSetProperties;
 exports.documentRemovePermissions = documentRemovePermissions;
 exports.documentAddCollections = documentAddCollections;

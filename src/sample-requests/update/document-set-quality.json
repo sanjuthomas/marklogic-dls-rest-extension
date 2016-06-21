@@ -1,0 +1,5 @@
+{
+  "$dls-function": "dls:document-set-quality",
+  "$uri": "/entrepreneur.json",
+  "$quality" : 1
+}

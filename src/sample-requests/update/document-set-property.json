@@ -1,11 +1,11 @@
 {
-  "$dls-function": "dls:document-set-properties",
+  "$dls-function": "dls:document-set-property",
   "$uri": "/entrepreneur.json",
-  "$properties": [{
+  "$properties": {
     "src": "Images/Sun.png",
     "name": "sun1",
     "hOffset": 250,
     "vOffset": 250,
     "alignment": "center"
-  }]
+  }
 }

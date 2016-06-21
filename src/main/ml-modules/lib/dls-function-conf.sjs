@@ -130,6 +130,10 @@ var methods = {
         "mandatory" : ["$uri", "$properties"],
         "optional" : []
     },
+    "dls:document-set-property" : {
+        "mandatory" : ["$uri", "$properties"],
+        "optional" : []
+    },
     "dls:document-set-quality" : {
         "mandatory" : ["$uri", "$quality"],
         "optional" : []
