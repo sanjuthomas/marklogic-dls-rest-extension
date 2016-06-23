@@ -5,8 +5,9 @@
 var dls = require("/MarkLogic/dls.xqy");
 var json = require("/MarkLogic/json/json.xqy");
 
-var documentInsertAndManage = function(params){
+var documentInsertAndManage = function(params, context){
     dls.documentInsertAndManage(params["$uri"], params["$deep"], params["$doc"]);
+    context.outputStatus = [201, 'Created'];
     return params["$uri"];
 }
 

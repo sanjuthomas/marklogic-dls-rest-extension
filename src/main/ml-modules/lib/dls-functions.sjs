@@ -6,13 +6,13 @@ var readFunctions = require("/lib/dls-read-functions.sjs");
 var updateFunctions = require("/lib/dls-update-functions.sjs");
 
 
-invoke = function(methodType, methodName, params){
+invoke = function(methodType, methodName, params, context){
     if("GET" === methodType){
         var method = readFunctions.functionMapping[methodName];
         return method.call(this, params);
     }else if("PUT" === methodType){
         var method = updateFunctions.functionMapping[methodName];
-        return method.call(this, params);
+        return method.call(this, params, context);
     }
 }
 

@@ -184,11 +184,9 @@ var methods = {
     }
 }
 
-var parameters = {
-    "$permissions" : {
-        mandatory : ["$roleId", "$capability"]
-    }
+var $permissions = {
+    mandatory: ["$roleId", "$capability"]
 }
 
 exports.methods = methods;
-exports.parameters = parameters;
+exports.parameters = $permissions;

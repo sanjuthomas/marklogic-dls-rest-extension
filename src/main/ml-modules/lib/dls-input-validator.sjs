@@ -25,7 +25,7 @@ validateParams = function (methodName, params) {
 
         //validate if the params are in correct structure
         if (true === validationResult.inputValidationResult) {
-            validateObjectParam(methodName, params, validationResult)
+            validateObjectParam(params, validationResult)
         }
     }
     return validationResult;
@@ -38,36 +38,20 @@ populateErrorMessage = function (validationResult, argument) {
     validationResult.reason = "Mandatory arguments are missing."
 }
 
-validateObjectParam = function (methodName, params, validationResult) {
-    var paramsToValidate = configuration.methods[methodName].paramsToValidate
-    if (undefined !== paramsToValidate) {
-        paramsToValidate.forEach(function (p) {
-            var paramsValuesToValidate = getParamValuesValidate(params, p);
-            paramsValuesToValidate.forEach(function (paramToValidate) {
-                var parameterObject = configuration.parameters[p];
-                var mandatoryElements = parameterObject.mandatory;
-                mandatoryElements.forEach(function (a) {
-                    if (undefined === paramToValidate[a]) {
-                        validationResult.inputValidationResult = "Input validation failed.";
-                        validationResult.reason = "One or more input parameter is not in correct structure.";
-                        validationResult.paramterName = p;
-                        validationResult.missingElements = mandatoryElements;
-                    }
-                });
-            });
+validateObjectParam = function (params, validationResult) {
+    var permissions = [];
+    if (undefined !== params["$permissions"]) {
+        permissions = permissions.concat(params["$permissions"]);
+        permissions.forEach(function (permission) {
+            if (permission["$roleId"] === undefined || permission["$capability"] === undefined) {
+                validationResult.missingParams = undefined;
+                validationResult.inputValidationResult = "Input validation failed.";
+                validationResult.reason = "Permission is not in correct structure.";
+                validationResult.paramterName = "$permissions";
+                validationResult.sampleInput = { "$permissions": { "$roleId": "dls-admin", "$capability": "update" } };
+            }
         });
     }
-}
-
-getParamValuesValidate = function (params, p) {
-    var toArray = [];
-    var paramToValidate = params[p];
-    if (paramToValidate instanceof Array) {
-        toArray = paramToValidate;
-    } else {
-        toArray.push(paramToValidate);
-    }
-    return toArray;
 }
 
 exports.validateParams = validateParams;

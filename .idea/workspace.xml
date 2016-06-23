@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2880388c-a48f-41cb-87c8-13c0886ee850" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/update/document-set-property.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample-requests/update/document-set-quality.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/ml-last-configured-timestamps.properties" afterPath="$PROJECT_DIR$/build/ml-last-configured-timestamps.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs" afterPath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-functions.sjs" afterPath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-functions.sjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs" afterPath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs" afterPath="$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample-requests/update/document-set-properties.json" afterPath="$PROJECT_DIR$/src/sample-requests/update/document-set-properties.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs" afterPath="$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs" />
     </list>
     <ignored path="marklogic-dls-rest-extension.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,18 +44,60 @@
       <file leaf-file-name="dls-update-functions.sjs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.925926">
-              <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="29" />
+            <state vertical-scroll-proportion="-15.555555">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-set-property.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-property.json">
+      <file leaf-file-name="document-set-collections.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-collections.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21994135">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state vertical-scroll-proportion="-2.5">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dls-input-validator.sjs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="97" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dls-function-conf.sjs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="191" column="10" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dls-functions.sjs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-functions.sjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dls-rest-extension.sjs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38243628">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -73,73 +113,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dls-function-conf.sjs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.592592">
-              <caret line="132" column="30" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="30" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document-set-collections.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-collections.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dls-read-functions.sjs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-read-functions.sjs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document-add-properties.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-properties.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document-set-properties.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-properties.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document-unmanage.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-unmanage.json">
+      <file leaf-file-name="document-add-permissions.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-permissions.json">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document-set-quality.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-quality.json">
+      <file leaf-file-name="document-add-collections.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="document-insert-and-manage.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-insert-and-manage.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -738,7 +736,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/ml-config/rest-api.json" />
         <option value="$PROJECT_DIR$/src/main/testtest.js" />
-        <option value="$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-add-permissions.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-insert-and-manage.json" />
@@ -758,7 +755,6 @@
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-unmanage.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/document-version.txt" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/document-version-as-of.txt" />
-        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs" />
         <option value="$PROJECT_DIR$/src/sample-requests/read/documents-version-uri.txt" />
         <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-read-functions.sjs" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-update.json" />
@@ -768,13 +764,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-set-collections.json" />
         <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-functions.sjs" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-set-permission.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-set-properties.json" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-set-property.json" />
-        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs" />
         <option value="$PROJECT_DIR$/src/sample-requests/update/document-set-quality.json" />
         <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs" />
+        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs" />
+        <option value="$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs" />
+        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-functions.sjs" />
+        <option value="$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs" />
       </list>
     </option>
   </component>
@@ -791,7 +789,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="-20" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="803" />
@@ -1074,7 +1072,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="23" width="1440" height="803" extended-state="6" />
+    <frame x="-20" y="23" width="1440" height="803" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29930556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1288,13 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-checkout.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1306,13 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.75">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-insert-and-manage.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1364,26 +1348,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-remove-properties.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1396,42 +1364,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-functions.sjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-remove-permissions.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-permissions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-permissions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-collections.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1460,14 +1396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.925926">
-          <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-unmanage.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1484,20 +1412,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-property.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-collections.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-insert-and-manage.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-collections.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-add-permissions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-permissions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-input-validator.sjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="97" selection-start-line="45" selection-start-column="97" selection-end-line="45" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-function-conf.sjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.592592">
-          <caret line="132" column="30" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="191" column="10" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample-requests/update/document-set-property.json">
+    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-functions.sjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21994135">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/lib/dls-update-functions.sjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.555555">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ml-modules/services/dls-rest-extension.sjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38243628">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding />
         </state>
       </provider>

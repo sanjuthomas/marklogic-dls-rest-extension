@@ -10,8 +10,9 @@ function put(context, params, input) {
     var methodName = inputObject["$dls-function"];
     var validationResult = validator.validateParams(methodName, inputObject);
     if(validationResult.inputValidationResult === true){
-        return dlsFunctions.invoke("PUT", methodName, inputObject);
+        return dlsFunctions.invoke("PUT", methodName, inputObject, context);
     }
+    context.outputStatus = [400, 'Invalid Input'];
     return validationResult;
 };
 
@@ -22,6 +23,7 @@ function get(context, params) {
     if(validationResult.inputValidationResult === true){
         return dlsFunctions.invoke("GET", methodName, params);
     }
+    context.outputStatus = [400, 'Invalid Input'];
     return validationResult;
 };
 
